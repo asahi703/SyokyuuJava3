@@ -2,20 +2,17 @@
 
 public class DisplayFaceAndTree extends MyFrame{
 	public void run() {
-		Face[] faces =new Face[3];
-		faces[0] = new Face(50,50,10,5);
-		faces[1] = new Face(200,100,-10,-5);
-		faces[2] = new Face(0,100,5,0);
+		Face face1 = new Face(50,50,10,5);
+		
+		Tree tree1 = new Tree(200,100,-10,-5);
+		
 		for(int i=0; i < 30; i++) {
 			clear();
-			for(int j=0; j < 3; j++) {
-				faces[j].draw(this);
-			}
-			
-			for(int j=0; j < 3; j++) {
-				faces[j].move();
-			}
-			sleep(0.1);
+			face1.draw(this);
+			tree1.draw(this);
+			face1.move();
+			tree1.move();
+		    sleep(0.1);
 		}
 	}
 
