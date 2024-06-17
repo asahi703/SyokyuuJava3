@@ -34,11 +34,6 @@ public class Car extends Vehicle implements KeyListener{
 	@Override
 	public void keyReleased(KeyEvent e) {
 		// TODO 自動生成されたメソッド・スタブ
-		if(e.getKeyCode()==KeyEvent.VK_LEFT) {
-			vx=0;
-		}
-		if(e.getKeyCode()==KeyEvent.VK_RIGHT) {
-			vx=0;
-		}
+		
 	}
 }
